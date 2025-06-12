@@ -338,7 +338,6 @@
           
           (ok true)))
     err-payment-not-found))
-
 ;; Emergency backup authentication using backup hash
 (define-public (backup-authenticate (payment-id uint) (backup-biometric-data (buff 64)))
   (match (map-get? payment-requests payment-id)
