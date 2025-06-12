@@ -380,7 +380,6 @@
         
         (ok true))
     err-payment-not-found))
-
 ;; Update daily spending limit
 (define-public (update-spending-limit (new-limit uint))
   (match (map-get? user-profiles tx-sender)
