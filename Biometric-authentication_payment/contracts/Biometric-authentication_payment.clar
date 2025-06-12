@@ -226,7 +226,6 @@
       transaction-count: u0
     })
     (ok true)))
-
 ;; Create payment request
 (define-public (create-payment-request (payee principal) (amount uint) (description (string-ascii 128)) (requires-biometric bool))
   (let ((payment-id (+ (var-get payment-counter) u1))
