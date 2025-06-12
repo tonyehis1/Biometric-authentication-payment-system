@@ -283,7 +283,6 @@
                   err-biometric-verification-failed))))
         err-biometric-not-registered)
     err-payment-not-found))
-
 ;; Process authenticated payment
 (define-public (process-biometric-payment (payment-id uint))
   (match (map-get? payment-requests payment-id)
