@@ -251,7 +251,6 @@
       (var-set payment-counter payment-id)
       
       (ok payment-id))))
-
 ;; Authenticate with biometric data
 (define-public (authenticate-payment (payment-id uint) (biometric-data (buff 64)))
   (match (map-get? payment-requests payment-id)
